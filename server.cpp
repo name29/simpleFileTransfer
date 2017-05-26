@@ -213,7 +213,7 @@ int main(int argc,char** argv)
 		close(client_socket_fd);
 
 		//Execute the external script
-		sprintf(command_buffer,"./%s %s",script_name,filename);
+		sprintf(command_buffer,"%s %s",script_name,filename);
 		system(command_buffer);
         }
 	close(socket_fd);
